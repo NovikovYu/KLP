@@ -55,7 +55,7 @@ export default function Portfolios() {
       </Head>
 
       <Container
-        sx={{ maxWidth: theme.breakpoints.containers.md }}
+        sx={{ maxWidth: theme.breakpoints.values.containersMd }}
         maxWidth={false}
       >
         <PortfoliosTitle variant="h1">Portfolios</PortfoliosTitle>

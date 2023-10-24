@@ -13,7 +13,7 @@ export default function ConfirmYourEmail() {
       </Head>
 
       <Container
-        sx={{ maxWidth: theme.breakpoints.containers.md }}
+        sx={{ maxWidth: theme.breakpoints.values.containersMd }}
         maxWidth={false}
       >
         <InfoPageContent

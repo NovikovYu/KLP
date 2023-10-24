@@ -123,7 +123,7 @@ export default function Survey() {
       </Head>
 
       <Container
-        sx={{ maxWidth: theme.breakpoints.containers.md }}
+        sx={{ maxWidth: theme.breakpoints.values.Md }}
         maxWidth={false}
       >
         <SurvayWrapper>

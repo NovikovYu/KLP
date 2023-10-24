@@ -9,6 +9,19 @@ import { store } from '../store/store';
 import '@/styles/globals.css';
 import RootLayout from '@/components/Layout/Layout';
 
+declare module '@mui/material/styles' {
+  interface BreakpointOverrides {
+    xs: true; // removes the `xs` breakpoint
+    sm: true;
+    md: true;
+    lg: true;
+    xl: true;
+    containersMd: true; // adds the `tablet` breakpoint
+    containersLg: true;
+    // desktop: true;
+  }
+}
+
 declare module '@mui/material/styles/createPalette' {
   interface Palette {
     colorsForLineChart: Color;
@@ -26,14 +39,14 @@ declare module '@mui/material/styles/createPalette' {
   }
 }
 
-declare module '@mui/material/styles' {
-  interface BreakpointsOptions {
-    containers?: {
-      md: number;
-      lg: number;
-    };
-  }
-}
+// declare module '@mui/material/styles' {
+//   interface BreakpointsOptions {
+//     containers?: {
+//       md: number;
+//       lg: number;
+//     };
+//   }
+// }
 
 // const LinkBehaviour = forwardRef(function LinkBehaviour(props, ref) {
 //   return <NextLink ref={ref} {...props} />;
@@ -212,11 +225,13 @@ const theme = createTheme({
       md: 900,
       lg: 1200,
       xl: 1536,
+      containersMd: 808,
+      containersLg: 1004,
     },
-    containers: {
-      md: 808,
-      lg: 1004,
-    },
+    // containers: {
+    //   md: 808,
+    //   lg: 1004,
+    // },
   },
 });
 

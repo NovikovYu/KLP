@@ -87,7 +87,7 @@ export default function СPortfolio() {
       </Head>
 
       <Container
-        sx={{ maxWidth: theme.breakpoints.containers.lg }}
+        sx={{ maxWidth: theme.breakpoints.values.containersLg }}
         maxWidth={false}
       >
         <PortfolioTitleWrapper>

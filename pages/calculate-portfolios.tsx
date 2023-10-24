@@ -19,7 +19,7 @@ export default function СalculatePortfolios() {
       {/* закладка - убрал component="main" */}
       <MainBox>
         <Container
-          sx={{ maxWidth: theme.breakpoints.containers.md }}
+          sx={{ maxWidth: theme.breakpoints.values.containersMd }}
           maxWidth={false}
         >
           {/* закладка - убрал component="main" */}
